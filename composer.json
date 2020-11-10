@@ -1,0 +1,26 @@
+{
+  "name": "dnafactory/module-google-tag-manager",
+  "type": "magento2-module",
+  "description": "Google Tag Manager for Magento 2",
+  "keywords": ["Magento2"],
+  "license": [
+  ],
+  "require": {
+    "php": "^7.1|^7.2|^7.3",
+    "dnafactory/core": "*"
+  },
+  "authors": [
+    {
+      "name": "Daniel Russo",
+      "email": "daniel@dnafactory.it",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "DNAFactory\\GoogleTagManager\\": ""
+    }
+  }
+}
+
