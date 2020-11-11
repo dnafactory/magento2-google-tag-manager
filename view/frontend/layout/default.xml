@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="head.additional">
-            <block class="Magento\Framework\View\Element\Template" ifconfig="google/tagmanager/active" name="gtm.head" before="-" template="DNAFactory_GoogleTagManager::gtm/head.phtml" />
-        </referenceContainer>
+        <referenceBlock name="head.additional">
+            <block class="DNAFactory\GoogleTagManager\Block\Gtm" ifconfig="google/tagmanager/active" name="gtm.head" before="-" template="DNAFactory_GoogleTagManager::gtm/head.phtml" />
+        </referenceBlock>
 
         <referenceContainer name="after.body.start">
-            <block class="Magento\Framework\View\Element\Template" ifconfig="google/tagmanager/active" name="gtm.body" before="-" template="DNAFactory_GoogleTagManager::gtm/body.phtml" />
+            <block class="DNAFactory\GoogleTagManager\Block\Gtm" ifconfig="google/tagmanager/active" name="gtm.body" before="-" template="DNAFactory_GoogleTagManager::gtm/body.phtml" />
         </referenceContainer>
     </body>
 </page>
